@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Memories</title>
+        <link rel="stylesheet"  href="index.css">
+    </head>
+    <body>
+        <div class="cointainer">
+            <div class="backgroundcolor">
+            <div class="row1">
+                <div class="col-3">
+                    <div class="headd">
+                        <h1>The Ancient</h1>
+                        <p>All about indian ancient</p>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <p>Sign Up</p>
+                    <p>Login</p>
+                    <p>RSS Feeds</p>
+                    <p>Archive</p>
+                </div>
+                <div class="col-4">
+                    <div class="search-container">
+                    <input type="text" placeholder="Search.." name="search">        
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <nav>
+            <ul class="topnav">
+                <li><a class="active" href="homepage">Home Page</a></li>
+                <li><a href="styledemo">Style Demo</a></li>
+                <li><a href="fullwidth">Full Width</a></li>
+                <li><a href="dropdown">Dropdown</a></li>
+                <li><a href="gallery">Gallery</a></li>
+                <li><a href="protfolio">Protfolio</a></li>
+                <li><a href="linktext">Link Text</a></li>
+                <li><a href="longlinktext">Video</a></li>
+            </ul>
+        </nav>
+        <div class="cointainer">
+            <div class="row">
+        <div col-12>
+        <div class="slideshow-cointainer">
+            <div class="myslides fade">
+                <div class="numbertext">1/3</div>
+                <img src="jaipur.jpg" style="width: 100%;">
+                <div class="imgtext">Jaipur is the capital of India’s Rajasthan state. It evokes the royal family that once ruled the region and that, in 1727, founded what is now called the Old City, or “Pink City” for its trademark building color. At the center of its stately street grid (notable in India) stands the opulent, colonnaded City Palace complex. With gardens, courtyards and museums, part of it is still a royal residence.</div>
+            </div>
+            <div class="myslides fade">
+                <div class="numbertext">2/3</div>
+                <img src="hampi.jpg" style="width: 100%;">
+                <div class="imgtext">Hampi is an ancient village in the south Indian state of Karnataka. It’s dotted with numerous ruined temple complexes from the Vijayanagara Empire. On the south bank of the River Tungabhadra is the 7th-century Hindu Virupaksha Temple, near the revived Hampi Bazaar. A carved stone chariot stands in front of the huge Vittala Temple site. Southeast of Hampi, Daroji Bear Sanctuary is home to the Indian sloth bear</div>
+            </div>
+            <div class="myslides fade">
+
+                <div class="numbertext">3/3</div>
+                <img src="kornak.jpg" style="width: 100%;">
+                <div class="imgtext">Konark Sun Temple is a 13th-century CE Sun temple at Konark about 35 kilometres northeast from Puri on the coastline of Odisha, India. The temple is attributed to king Narasimhadeva I of the Eastern Ganga Dynasty about 1250 CE</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
+          <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("myslides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+</div>
+</div>
+ <div class="centretext">
+     <p>India - The land of Vedas, the remarkable works contain not only religious ideas for a perfect life, but also facts which science has proved true. Electricity, radium, electronics, airship, all were known to the seers who founded the Vedas.</p>
+ </div>
+ <div class="titlecenter">
+     <h2>Most wisited ancient place in india</h2>
+ </div>
+<div class="cointainer">
+    <div class="row2">
+        <div class="fourpart">
+            <div class="col-3">
+      
+                   
+                        <img src="tajmahal.jpg" class="visited_places">
+                    <div>
+                    <label>Taj Mahal</label>
+                    <p class="boxprea">The Taj Mahal, originally the Rauza-i-munawwara is an ivory-white marble mausoleum on the southern bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor Shah Jahan to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself.</p>
+                </div>
+
+               
+
+            </div>
+            <div class="col-3">
+              
+                   
+                        <img src="fatehpura.jpg" class="visited_places">
+                    <div>
+                    <label>Fatehpur Sikri</label>
+                    <p class="boxprea">Fatehpur Sikri is a small city in northern India, just west of Agra, founded by a 16th-century Mughal emperor. Red sandstone buildings cluster at its center. Buland Darwaza gate is the entrance to Jama Masjid mosque. Nearby is the marble Tomb of Salim Chishti. Diwan-E-Khas hall has a carved central pillar. Jodha Bais Palace is a mix of Hindu and Mughal styles, next to the 5-story Panch Mahal that overlooks the site.</p>
+                </div>
+
+            
+
+            </div>
+            <div class="col-3">
+              
+                    
+                        <img src="khajuro.webp" class="visited_places">
+                    <div>
+                    <label>Khajuraho</label>
+                    <p class="boxprea">The Khajuraho Group of Monuments are a group of Hindu and Jain temples in Chhatarpur district, Madhya Pradesh, India, about 175 kilometres southeast of Jhansi. They are a UNESCO World Heritage Site. The temples are famous for their nagara-style architectural symbolism and their erotic sculptures.</p>
+                </div>
+        
+
+            </div>
+            <div class="col-3">
+               
+                   
+                        <img src="qutub.jpg" class="visited_places">
+                    <div>
+                    <label>Qutab Minar</label>
+                    <p class="boxprea">The Qutb Minar, also spelled as Qutub Minar and Qutab Minar, is a minaret and "victory tower" that forms part of the Qutb complex. It is a UNESCO World Heritage Site in the Mehrauli area of New Delhi, India.</p>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footsy">
+    <div class="row3">
+        <div class="col-6">
+            <h2>Customer Review</h2>
+            <div class="reviewtext">
+                <img src="man.jpg" class="reviewimg">
+                <div class="mytext">
+                    <h4>Very happy</h4>
+                        <p>I am very happy about this site. this really help me with to read about indian ancient and get knowledge abiu indian history that many pepole don't know anout anything</p>
+                    </div>
+                </div>
+                    <div class="womenreview">
+                    <img src="women.jpg" class="reviewimg">
+                    <div class="womentext">
+                    <h4>Glad find this</h4>
+                    <p>I am looing for rading about anciet india but i can't find anything good article but someday before i find this website and i am very setisfy after read this website article. They put lot about indian history and indian people</p>
+                </div>
+                </div>
+        </div>   
+        <div class="col-3">
+            <h2>Contact information</h2>
+            <p>Address:A/26 Tirupati bunglows,abu highway,Hanuman tekri , Palanpur, 385001</p>
+            <div class="forbutton">
+            <button class="button" type="button">Read More Here >></button></div>
+            <br>
+            <h2>Other Info</h2>
+            <p>We are here to article about ancient india that is many of us dont't know anout it</p>
+            <div class="forbutton">
+            <button class="button" type="button">Read More Here >></button></div>
+
+        </div>   
+        <div class="col-3">
+            <h2>Contact us</h2>
+            <form>
+                <input class="inputbox" name="fullname" type="text" placeholder="Full Name">
+
+                <input class="inputbox" name="Email"
+                type="text" placeholder="Email">
+                
+                <input class="inputbox1" name="message"
+                type="text" placeholder="Message">
+            </form>
+        </div>  
+        </div>
+    
+</footer>
+</body>
+</html>
